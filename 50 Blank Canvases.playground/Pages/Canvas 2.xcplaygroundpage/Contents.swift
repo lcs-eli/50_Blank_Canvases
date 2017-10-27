@@ -14,7 +14,14 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 400, height: 300)
-
+for x in stride(from: 0, through: 1000, by: 100){
+    if x % 200 == 0 {
+        canvas.fillColor = Color.blue
+    }else  {
+        canvas.fillColor = Color.yellow
+    }
+    canvas.drawRectangle(bottomLeftX: x, bottomLeftY: 0, width: 100, height: 1000)
+}
 /*:
  ## Add your code below
  
