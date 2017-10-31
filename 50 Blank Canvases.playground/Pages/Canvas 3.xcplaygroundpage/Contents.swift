@@ -13,7 +13,34 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 800, height: 600)
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = false
+// move the origin to the middle of the canvasand
+canvas.translate(byX: 400, byY: 300)
+canvas.drawAxes()
+
+
+//draw circle
+canvas.drawShapesWithBorders = true
+
+for _ in stride(from: 1, through: 8, by: 1){
+    canvas.drawEllipse(centreX: 0, centreY: 200, width: 200, height: 200, borderWidth: 3)
+canvas.rotate(by: 45)
+ 
+}
+
+// draw cicrle no fill big border
+canvas.drawShapesWithFill = false
+canvas.drawShapesWithBorders = true
+canvas.borderColor = Color.white
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 435, height: 435, borderWidth: 175)
+canvas.drawLine(fromX: -100, fromY: -200, toX: 100, toY: 200, lineWidth: 3)
+canvas.drawLine(fromX: 200, fromY: -100, toX: -200, toY: 100, lineWidth: 3)
+canvas.drawLine(fromX: -50, fromY: 200, toX: 50, toY: -200, lineWidth: 3)
+canvas.drawLine(fromX: -200, fromY: -50, toX: 200, toY: 50, lineWidth: 3)
+
+
 
 /*:
  ## Add your code below
