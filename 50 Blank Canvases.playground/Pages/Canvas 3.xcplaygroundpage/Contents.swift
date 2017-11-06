@@ -26,7 +26,7 @@ canvas.drawAxes()
 canvas.drawShapesWithBorders = true
 
 for _ in stride(from: 1, through: 8, by: 1){
-    canvas.drawEllipse(centreX: 0, centreY: 200, width: 200, height: 200, borderWidth: 3)
+    canvas.drawEllipse(centreX: 0, centreY: 200, width: 200, height: 200, borderWidth: 5)
 canvas.rotate(by: 45)
  
 }
@@ -44,7 +44,7 @@ canvas.drawEllipse(centreX: 0, centreY: 0, width: 420, height: 420, borderWidth:
 canvas.drawShapesWithBorders = true
 canvas.borderColor = Color.black
 for _ in stride(from: 1, through: 8, by: 1){
-    canvas.drawEllipse(centreX: 0, centreY: 225, width: 225, height: 225, borderWidth: 3)
+    canvas.drawEllipse(centreX: 0, centreY: 225, width: 225, height: 225, borderWidth: 5)
     canvas.rotate(by: 45)
     
 }
@@ -54,10 +54,53 @@ canvas.borderColor = Color.white
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 420, height: 420, borderWidth: 150)
 
 
-//canvas.drawLine(fromX: -100, fromY: -200, toX: 100, toY: 200, lineWidth: 3)
-//canvas.drawLine(fromX: 200, fromY: -100, toX: -200, toY: 100, lineWidth: 3)
-//canvas.drawLine(fromX: -50, fromY: 200, toX: 50, toY: -200, lineWidth: 3)
-//canvas.drawLine(fromX: -200, fromY: -50, toX: 200, toY: 50, lineWidth: 3)
+// draw another line of web
+canvas.drawShapesWithBorders = true
+canvas.borderColor = Color.black
+for _ in stride(from: 1, through: 8, by: 1){
+    canvas.drawEllipse(centreX: 0, centreY: 250, width: 250, height: 250, borderWidth: 5)
+    canvas.rotate(by: 45)
+}
+
+// draw a big circle to erase the web
+canvas.borderColor = Color.white
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 450, height: 450, borderWidth: 150)
+
+
+
+
+
+//draw another line of the web
+canvas.drawShapesWithBorders = true
+canvas.borderColor = Color.black
+for _ in stride(from: 1, through: 8, by: 1){
+    canvas.drawEllipse(centreX: 0, centreY: 295, width: 295, height: 295, borderWidth: 5)
+    canvas.rotate(by: 45)
+}
+
+
+// draw a big circle to erase the web
+canvas.borderColor = Color.white
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 492, height: 492, borderWidth: 140)
+
+canvas.drawShapesWithBorders = true
+canvas.borderColor = Color.black
+for _ in stride(from: 1, through: 8, by: 1){
+    canvas.drawEllipse(centreX: 0, centreY: 340, width: 340, height: 340, borderWidth: 5)
+    canvas.rotate(by: 45)
+}
+
+
+canvas.borderColor = Color.white
+canvas.drawEllipse(centreX: 0, centreY: 0, width: 530, height: 530, borderWidth: 120)
+
+canvas.drawLine(fromX: -85, fromY: -200, toX: 83, toY: 200, lineWidth: 5)
+canvas.drawLine(fromX: 225, fromY: -95, toX: -225, toY: 95, lineWidth: 5)
+canvas.drawLine(fromX: -80, fromY: 200, toX: 80, toY: -200, lineWidth: 5)
+canvas.drawLine(fromX: -200, fromY: -78, toX: 200, toY: 83, lineWidth: 5)
+
+
+
 
 /*:
  ## Add your code below
