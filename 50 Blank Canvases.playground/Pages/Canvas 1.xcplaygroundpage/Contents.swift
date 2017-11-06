@@ -28,9 +28,9 @@ for x in stride(from: 10, through: 400, by: 20) {
     for y in stride(from: 300, through: 0, by: -30) {
         canvas.drawLine(fromX: x, fromY: y, toX: x - 10, toY:y-15, lineWidth: 1)
         canvas.drawLine(fromX: x, fromY: y, toX: x+10, toY: y-15, lineWidth: 1)
-        canvas.drawLine(fromX: x-10, fromY: y-15, toX: x+10, toY: y-15, lineWidth: 1)
-        canvas.drawLine(fromX: x-10, fromY: y-15, toX: x, toY: y-30, lineWidth: 1)
-        canvas.drawLine(fromX: x+10, fromY: y-15, toX: x, toY: y-30)
+        canvas.drawLine(fromX: x-20, fromY: y-10, toX: x+10, toY: y-15, lineWidth: 1)
+        canvas.drawLine(fromX: x-10, fromY: y-10, toX: x, toY: y-15, lineWidth: 1)
+        canvas.drawLine(fromX: x+10, fromY: y-10, toX: x, toY: y-15)
     }
 }
 
